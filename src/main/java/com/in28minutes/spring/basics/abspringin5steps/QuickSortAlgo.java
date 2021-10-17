@@ -1,5 +1,8 @@
 package com.in28minutes.spring.basics.abspringin5steps;
 
+import org.springframework.stereotype.Component;
+
+
 public class QuickSortAlgo implements SortAlgo{
 	public int[] sort(int[] array) {
 		//Sorting the array
