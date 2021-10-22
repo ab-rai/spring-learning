@@ -1,4 +1,4 @@
-package com.in28minutes.spring.basics.abspringin5steps;
+package com.in28minutes.spring.basics.abspringin5steps.basic;
 
 
 public interface SortAlgo {

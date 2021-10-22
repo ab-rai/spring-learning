@@ -1,7 +1,5 @@
-package com.in28minutes.spring.basics.abspringin5steps;
+package com.in28minutes.spring.basics.abspringin5steps.basic;
 
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
