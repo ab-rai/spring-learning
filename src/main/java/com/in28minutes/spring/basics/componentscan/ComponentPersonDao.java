@@ -3,6 +3,8 @@ package com.in28minutes.spring.basics.componentscan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.in28minutes.spring.basics.abspringin5steps.PostConstruct;
+
 @Component
 public class ComponentPersonDao {
 	@Autowired
@@ -15,4 +17,5 @@ public class ComponentPersonDao {
 	public void setComponentJdbcConnection(ComponentJdbcConnection jdbcConnection) {
 		this.jdbcConnection = jdbcConnection;
 	}
+	
 }

@@ -20,8 +20,9 @@ public class AbSpringIn5StepsComponentScanApplication {
 		System.out.println(personDao);
 		
 		System.out.println(personDao2);
-	
+		
 		
 	}
+	
 
 }
