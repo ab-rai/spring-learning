@@ -12,7 +12,8 @@ import com.in28minutes.spring.basics.abspringin5steps.scope.PersonDao;
 public class AbSpringIn5StepsScopeApplication {
 
 	public static void main(String[] args) {
-		ConfigurableApplicationContext appContext=new AnnotationConfigApplicationContext(AbSpringIn5StepsScopeApplication.class);
+		try(ConfigurableApplicationContext appContext=new AnnotationConfigApplicationContext(AbSpringIn5StepsScopeApplication.class))
+		{
 		PersonDao  personDao=appContext.getBean(PersonDao.class);
 		PersonDao  personDao2=appContext.getBean(PersonDao.class);
 		System.out.println(personDao);
@@ -20,7 +21,7 @@ public class AbSpringIn5StepsScopeApplication {
 		System.out.println(personDao.getJdbcConnection());
 		System.out.println(personDao2);
 		System.out.println(personDao2.getJdbcConnection());
-		
+		}
 	}
 
 }

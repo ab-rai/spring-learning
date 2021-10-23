@@ -16,7 +16,7 @@ public class AbSpringIn5StepsCdiApplication {
 		SomeCdiBusiness  cdiApp=appContext.getBean(SomeCdiBusiness.class);
 		System.out.println(cdiApp );
 		System.out.println(cdiApp.getSomeCdiDao());
-		
+		appContext.close();
 	}
 
 }

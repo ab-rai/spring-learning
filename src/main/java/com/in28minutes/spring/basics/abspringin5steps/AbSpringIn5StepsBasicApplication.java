@@ -1,6 +1,5 @@
 package com.in28minutes.spring.basics.abspringin5steps;
 
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
@@ -21,6 +20,7 @@ public class AbSpringIn5StepsBasicApplication {
 		System.out.println(binarySearch2);
 		int resInd=binarySearch.binarySearch(new int[] {3,2,1,4}, 4);
 		System.out.println("resInd="+resInd);
+		appContext.close();
 	}
 
 }
