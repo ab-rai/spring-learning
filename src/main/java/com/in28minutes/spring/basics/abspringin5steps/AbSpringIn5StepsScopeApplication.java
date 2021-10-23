@@ -1,18 +1,18 @@
 package com.in28minutes.spring.basics.abspringin5steps;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
-import com.in28minutes.spring.basics.abspringin5steps.basic.BinarySearchImpl;
 import com.in28minutes.spring.basics.abspringin5steps.scope.PersonDao;
 
-@SpringBootApplication
-
+@Configuration
+@ComponentScan
 public class AbSpringIn5StepsScopeApplication {
 
 	public static void main(String[] args) {
-		ConfigurableApplicationContext appContext= SpringApplication.run(AbSpringIn5StepsScopeApplication.class, args);
+		ConfigurableApplicationContext appContext=new AnnotationConfigApplicationContext(AbSpringIn5StepsScopeApplication.class);
 		PersonDao  personDao=appContext.getBean(PersonDao.class);
 		PersonDao  personDao2=appContext.getBean(PersonDao.class);
 		System.out.println(personDao);
