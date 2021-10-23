@@ -16,7 +16,10 @@ public class AbSpringIn5StepsXmlContextApplication {
 		XmlPersonDao personDao =appContext.getBean(XmlPersonDao.class);
 		System.out.println(personDao);
 		System.out.println(personDao.getXmlJdbcConnection());
-		
+		System.out.println("->"+(Object)appContext.getBeanDefinitionNames());
+		for(String str: appContext.getBeanDefinitionNames() ) {
+			System.out.println(str);
+		}
 		appContext.close();
 	}
 
